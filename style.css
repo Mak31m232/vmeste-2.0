@@ -236,34 +236,89 @@ a{
     text-decoration: underline;
 }
 
-.social-network{
-    display: flex;
-    max-width: max-content;
-    margin-left: 20%;
-    margin-top: 6%;
-}
-
 .logo-social{
-    width: 38%;
-    padding-right: 10%;
+    position: absolute;
+    width: 70%;
+    margin-left: -68%;
+    margin-top: 2%;
 }
 
-.social-network h1{
-    display: flex;
-    align-items: flex-start;
-    font-size: 55px;
-    margin-left: -12%;
+.registration-main {
+    position: relative;
+    margin-left: 52%;
+    margin-top: 5%;
+    animation-name: reg;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: registration;
+    animation-delay: 0s;
+    z-index: 4;
 }
 
-.social-network h2{
-    display: flex;
-    align-items: flex-start;
-    margin-top: 11%;
-    margin-left: -23%;
-    margin-top: 8%;
+.welcome {
+    font-size: 40px;
+    margin-left: 1.5%;
+    margin-bottom: 5%;
 }
 
-.registration {
+.description {
+    font-size: 15px;
+    margin-left: 1.5%;
+    margin-top: -4%;
+    color: #bebebe;
+}
+
+.reg {
+    position: absolute;
+    z-index: 2;
+    margin-top: 2%;
+}
+  
+#usernameField-username {
+    display: block;
+    width: 330px;
+    height: 50px;
+    background-color: #292929;
+    border-radius: 10px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 15px;
+    transition-duration: .2s;
+}
+  
+#usernameField-username:focus,
+#usernameField-username:valid {
+    border: 2px solid rgb(152, 88, 255);
+    transition-duration: .2s;
+}
+
+#usernameField-password {
+    display: block;
+    width: 330px;
+    height: 50px;
+    background-color: #292929;
+    border-radius: 10px;
+    border: 2px solid #292929;
+    padding: 0px 12px;
+    outline: none;
+    margin-top: 6%;
+    caret-color: rgb(152, 88, 255);
+    color: rgb(212, 212, 212);
+    font-size: 15px;
+    transition-duration: .2s;
+}
+  
+#usernameField-password:focus,
+#usernameField-password:valid {
+    border: 2px solid rgb(152, 88, 255);
+    transition-duration: .2s;
+}
+
+button {
     --fancy-button-gradient-0: #8d49fd;
     --fancy-button-gradient-50: #7f56f3;
     --fancy-button-gradient-100: #5691f3;
@@ -272,87 +327,23 @@ a{
     --fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
     --fancy-button-shine-top: #e9d1ff;
     --fancy-button-shine-bottom: #adfff9;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    margin-left: -58%;
-    margin-top: 60%;
-    border: none;
-    outline: none;
     position: relative;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 25px;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 15px;
+    background-image: linear-gradient(
+    var(--fancy-button-gradient-0) 0%,
+    var(--fancy-button-gradient-50) 50%,
+    var(--fancy-button-gradient-100) 100%
+    );
+    background-size: 400%;
+    margin-top: 22%;
     color: #fff;
-    background-image: linear-gradient(
-    var(--fancy-button-gradient-0) 0%,
-    var(--fancy-button-gradient-50) 50%,
-    var(--fancy-button-gradient-100) 100%
-    );
-  }
-  
-
-  .registration:after {
-    background-size: cover;
-    z-index: 2;
-    opacity: 0.3;
-    mix-blend-mode: overlay;
-    pointer-events: none;
-  }
-  
-  .registration span {
-    display: block;
-    padding: 15px 50px;
-    border-radius: inherit;
-    overflow: hidden;
-    position: relative;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-
-  .log-in {
-    --fancy-button-gradient-0: #8d49fd;
-    --fancy-button-gradient-50: #7f56f3;
-    --fancy-button-gradient-100: #5691f3;
-    --fancy-button-inner-shadow-top: rgba(233, 209, 255, 0.2);
-    --fancy-button-inner-shadow-top-lg: rgba(9, 12, 60, 0.1);
-    --fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
-    --fancy-button-shine-top: #e9d1ff;
-    --fancy-button-shine-bottom: #adfff9;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    margin-left: 5%;
-    margin-top: 60%;
     border: none;
-    outline: none;
-    position: relative;
     cursor: pointer;
-    z-index: 1;
-    border-radius: 25px;
-    color: #ffffff;
-    background-image: linear-gradient(
-    var(--fancy-button-gradient-0) 0%,
-    var(--fancy-button-gradient-50) 50%,
-    var(--fancy-button-gradient-100) 100%
-    );
-  }
-  
+}
 
-  .log-in:after {
-    background-size: cover;
-    z-index: 2;
-    opacity: 0.3;
-    mix-blend-mode: overlay;
-    pointer-events: none;
-  }
-  
-  .log-in span {
-    display: block;
-    padding: 15px 50px;
-    border-radius: inherit;
-    overflow: hidden;
-    position: relative;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.button-login{
+    margin-left: 2%;
+}

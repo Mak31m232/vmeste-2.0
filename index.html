@@ -50,23 +50,24 @@
             </div>
         </div>
     </header>
-    <div class="social-network">
-        <img class="logo-social" src="img/Безымянный.png" alt="">
-        <h1>vmeste-это</h1>
-        <h2>
-            универсальная платформа<br>
-            в которой вы сможете<br>
-            слушать музыку,<br>
-            смотреть фильмы и видео, читать книги<br>
-            и все это абсолютно бесплатно,<br>
-            а главное легально
-        <h2>
-        <a href="http://127.0.0.1:5500/%D1%80%D0%B5%D0%B3%D0%B5%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F/index.html" class="registration">
-            <span>регестрация</span>
-        </a>
-        <a href="http://127.0.0.1:5500/%D0%B2%D1%85%D0%BE%D0%B4/index.html" class="log-in">
-            <span>войти</span>
-        </a>
+    <div id="registration-main" class="registration-main">
+        <div id="registration" class="registration">
+            <img class="logo-social" src="img/Безымянный.png" alt="">
+                <h3 class="welcome">Добро пожаловать!</h3>
+                <h1 class="description">Введите имя и пароль и <br>начните смотреть видео, фильмы,<br> 
+                    слушать музыку<br> 
+                    и читать книги прямо сейчас </h1>
+            <div class="reg">
+                <input type="text" placeholder="@username" id="usernameField-username" required="required">
+                <input type="password" placeholder="password" id="usernameField-password" required="required">
+            </div>
+            <button class="button-registartion">
+                <span class="button-content">Зарегистрироваться</span>
+            </button>
+            <button class="button-login">
+                <span class="button-content">Войти</span>
+            </button>
+        </div>
     </div>
 </body>
 </html>
