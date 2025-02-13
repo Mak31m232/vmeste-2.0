@@ -446,7 +446,106 @@ a{
         display: block;
         margin-top: 50%;
         margin-left: -70%;
-        width: 35%;
+        width: 40%;
+        height: 280%;
+        border-radius: 10px;
+        background-color: rgb(50, 50, 50);
+    }
+
+    .ul-menu li{
+        padding-left: 15%;
+        padding-top: 2%;
+    }
+    
+    .search{
+        width: 6%;
+        margin-left: 70%;
+        z-index: 3;
+    }
+
+    .add{
+        display: block;
+        width: 6%;
+        margin-left: 7%;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .user-btn{
+        display: none;
+    }
+
+    .div-content{
+        display: none;
+    }
+
+    .form{
+        margin-left: -34%;
+    }
+
+    .group{
+        width: 300%;
+    }
+
+    .form input{
+        width: 250px;
+        height: 38px;
+        transition: .1s;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 30px;
+        margin-left: -18%;
+        cursor: pointer;
+    }
+
+    .registration-main{
+        display: none;
+    }
+}
+
+@media(max-width:360px){
+    .menu{
+        display: block;
+        width: 10%;
+        margin-left: -3%;
+        cursor: pointer;
+    }
+
+    .header{
+        height: 60px;
+        width: 100%;
+    }
+
+    .link-logo{
+        display: none;
+    }
+
+    .vmeste{
+        position: absolute;
+        margin-bottom: 2%;
+        font-size: 45px;
+        margin-left: 1%;
+    }
+
+    .bi-bi-chevron-right{
+        display: none;
+    }
+
+    .bi-bi-chevron-left{
+        display: none;
+    }
+
+    .div-switch{
+        display: none;
+    }
+
+    .ul-menu{
+        display: block;
+        margin-top: 55%;
+        margin-left: -70%;
+        width: 40%;
         height: 280%;
         border-radius: 10px;
         background-color: rgb(50, 50, 50);
