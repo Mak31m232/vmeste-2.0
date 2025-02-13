@@ -13,6 +13,7 @@
 <body>
     <header class="header">
         <div class="main">
+            <img onclick="menu()" class="menu" src="img/меню.png" alt="">
             <a class="link-logo" href=""><img class="img-logo" src="img/лого.png" alt=""></a>
             <a href="" class="vmeste">vmeste</a>
             <form id="form" class="form" action="">
@@ -22,18 +23,30 @@
                           d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
                         ></path>
                     </svg>
-                    <input class="input" type="search" spellcheck="true" placeholder="Поиск" />
+                    <input id="input" class="input" type="search" spellcheck="true" placeholder="Поиск" />
+                    <svg onclick="cross_input()" xmlns="http://www.w3.org/2000/svg" style="margin-left: -13%;" width="40" fill="currentColor" class="bi-bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
                 </div>
             </form>
-            <ul class="ul-menu">
+            <div id="div-switch" class="div-switch">
+                <svg onclick="left_switch()" xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" id="bi-bi-chevron-left" class="bi-bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                </svg>
+            </div>
+            <ul id="ul-menu" class="ul-menu">
                 <li><a id="main" href="" class="link-menu">Главная</a></li>
                     <li><a href="" class="link-menu">Музыка</a></li>   
-                    <li><a href="" class="link-menu">Библиотека</a></li>
-                <li><a href="" class="link-menu">Кинотеатр</a>
+                        <li><a href="" class="link-menu">Библиотека</a></li>
+                    <li><a href="" class="link-menu">Кинотеатр</a>
+                    <svg onclick="right_switch()" xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" id="bi-bi-chevron-right" class="bi-bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                <li><a href="" class="link-menu">Трансляции</a>
             </ul>
-            <img onclick="input()" class="search" src="img/поиск.png" alt="">
+            <img onclick="input()" id="search" class="search" src="img/поиск.png" alt="">
             <img onclick="menuUser()" class="user-btn" src="img/пользователь.png" alt="">
-        </div>
+            <img src="img/плюс.png" class="add" alt="">
         <div id="user" class="user">
             <div class="wrap">
                 <h3 class="Your-account">Ваш акаунт</h3>
@@ -44,7 +57,6 @@
                         <a href="" class="link-menu">Премиум</a><br>
                             <a href="" class="link-menu">Избранное</a><br>
                             <a href="" class="link-menu">Настройки</a><br>
-                        <a href="" class="link-menu">Сообщит о ошибке</a><br>
                     <a href="" class="link-menu">Помощь</a><br>
                 <a href="" class="link-menu">Выйти</a>
             </div>
@@ -52,7 +64,7 @@
     </header>
     <div id="registration-main" class="registration-main">
         <div id="registration" class="registration">
-            <img class="logo-social" src="img/Безымянный.png" alt="">
+            <img class="logo-social" src="img/лого.png" alt="">
                 <h3 class="welcome">Добро пожаловать!</h3>
                 <h1 class="description">Введите имя и пароль и <br>начните смотреть видео, фильмы,<br> 
                     слушать музыку<br> 
@@ -61,7 +73,7 @@
                 <input type="text" placeholder="@username" id="usernameField-username" required="required">
                 <input type="password" placeholder="password" id="usernameField-password" required="required">
             </div>
-            <button class="button-registartion">
+            <button onclick="registration()" id="button-registartion" class="button-registartion">
                 <span class="button-content">Зарегистрироваться</span>
             </button>
             <button class="button-login">
@@ -69,5 +81,7 @@
             </button>
         </div>
     </div>
+    </div>
+    <div class="div-content"></div>
 </body>
 </html>
