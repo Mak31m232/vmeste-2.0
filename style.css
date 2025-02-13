@@ -409,8 +409,8 @@ a{
 @media(max-width:450px){
     .menu{
         display: block;
-        width: 8%;
-        margin-left: -6%;
+        width: 12%;
+        margin-left: -3%;
         cursor: pointer;
     }
 
@@ -444,7 +444,7 @@ a{
 
     .ul-menu{
         display: block;
-        margin-top: 45%;
+        margin-top: 50%;
         margin-left: -70%;
         width: 35%;
         height: 280%;
@@ -458,14 +458,14 @@ a{
     }
     
     .search{
-        width: 5%;
-        margin-left: 73%;
+        width: 8%;
+        margin-left: 70%;
         z-index: 3;
     }
 
     .add{
         display: block;
-        width: 5%;
+        width: 8%;
         margin-left: 7%;
         cursor: pointer;
         z-index: 3;
