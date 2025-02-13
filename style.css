@@ -426,8 +426,8 @@ a{
     .vmeste{
         position: absolute;
         margin-bottom: 2%;
-        font-size: 45px;
-        text-align: center;
+        font-size: 43px;
+        margin-left: -3%;
     }
 
     .bi-bi-chevron-right{
@@ -525,8 +525,8 @@ a{
     .vmeste{
         position: absolute;
         margin-bottom: 2%;
-        font-size: 45px;
-        margin-left: 1%;
+        font-size: 40px;
+        margin-left: -3%;
     }
 
     .bi-bi-chevron-right{
