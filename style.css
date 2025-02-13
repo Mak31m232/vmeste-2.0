@@ -427,7 +427,7 @@ a{
         position: absolute;
         margin-bottom: 2%;
         font-size: 45px;
-        margin-left: 1%;
+        margin-left: -3%;
     }
 
     .bi-bi-chevron-right{
@@ -458,14 +458,14 @@ a{
     }
     
     .search{
-        width: 6%;
+        width: 7%;
         margin-left: 70%;
         z-index: 3;
     }
 
     .add{
         display: block;
-        width: 6%;
+        width: 7%;
         margin-left: 7%;
         cursor: pointer;
         z-index: 3;
