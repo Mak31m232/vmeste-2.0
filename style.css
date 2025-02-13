@@ -409,7 +409,7 @@ a{
 @media(max-width:450px){
     .menu{
         display: block;
-        width: 20%;
+        width: 14%;
         margin-left: -3%;
         cursor: pointer;
     }
@@ -458,14 +458,14 @@ a{
     }
     
     .search{
-        width: 13%;
+        width: 10%;
         margin-left: 70%;
         z-index: 3;
     }
 
     .add{
         display: block;
-        width: 13%;
+        width: 10%;
         margin-left: 7%;
         cursor: pointer;
         z-index: 3;
