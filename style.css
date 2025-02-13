@@ -409,8 +409,8 @@ a{
 @media(max-width:480px){
     .menu{
         display: block;
-        width: 33%;
-        margin-left: -2%;
+        width: 8%;
+        margin-left: -6%;
         cursor: pointer;
     }
 
@@ -444,27 +444,28 @@ a{
 
     .ul-menu{
         display: block;
-        margin-top: 40%;
+        margin-top: 45%;
         margin-left: -70%;
-        width: 33%;
-        height: 250%;
+        width: 35%;
+        height: 280%;
         border-radius: 10px;
         background-color: rgb(50, 50, 50);
     }
 
     .ul-menu li{
         padding-left: 10%;
+        padding-top: 2%;
     }
     
     .search{
-        width: 25%;
-        margin-left: 70%;
+        width: 5%;
+        margin-left: 73%;
         z-index: 3;
     }
 
     .add{
         display: block;
-        width: 25%;
+        width: 5%;
         margin-left: 7%;
         cursor: pointer;
         z-index: 3;
@@ -542,10 +543,10 @@ a{
 
     .ul-menu{
         display: block;
-        margin-top: 60%;
+        margin-top: 65%;
         margin-left: -60%;
         width: 60%;
-        height: 300%;
+        height: 320%;
         border-radius: 10px;
         background-color: rgb(50, 50, 50);
     }
