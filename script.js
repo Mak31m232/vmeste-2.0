@@ -31,7 +31,6 @@ function input() {
         form_input.style.marginLeft = "35%"
         form_input.style.opacity  = "0"
         form_input.style.zIndex  = "2"
-        input.style.width = "150px"
         form = 0;
     }
 }
