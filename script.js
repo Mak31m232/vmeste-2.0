@@ -22,7 +22,7 @@ function input() {
         input.style.width = "450px"
         form_input.style.marginLeft = "-36%"
         form_input.style.opacity  = "1"
-        form_input.style.zIndex  = "4"
+        form_input.style.zIndex  = "6"
         form = 1;
     }
     else if (form==1){
@@ -30,7 +30,7 @@ function input() {
         let input = document.getElementById("input")
         form_input.style.marginLeft = "35%"
         form_input.style.opacity  = "0"
-        form_input.style.zIndex  = "2"
+        form_input.style.zIndex  = "1"
         form = 0;
     }
 }
@@ -39,6 +39,7 @@ function cross_input() {
     let input = document.getElementById("form")
     input.style.opacity  = "0"
     input.style.zIndex  = "2"
+    input.style.transition = ".3s"
     form = 0;
 }
 
@@ -76,6 +77,8 @@ function right_switch() {
     let svg_switch = document.getElementById("bi-bi-chevron-left")
     let svg_switch_right = document.getElementById("bi-bi-chevron-right")
     let input = document.getElementById("input")
+    let switch_div = document.getElementById("div-switch")
+    switch_div.style.zIndex = "5"
     input.style.width = "400px"
     svg_switch_right.style.display = "none"
     svg_switch.style.display = "block"
