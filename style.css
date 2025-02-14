@@ -473,7 +473,7 @@ a{
    }
 }
 
-@media(max-width:1025px){
+@media(max-width:1024px){
     body{
         padding: 15px auto;
         margin: auto;
@@ -583,6 +583,7 @@ a{
     }
     
     .search{
+        display: block;
         width: 7%;
         margin-left: 70%;
         z-index: 3;
@@ -605,6 +606,7 @@ a{
     }
 
     .form{
+        opacity: 0;
         margin-left: -34%;
     }
 
@@ -633,7 +635,7 @@ a{
 @media(max-width:360px){
     .menu{
         display: block;
-        width: 10%;
+        width: 11%;
         margin-left: -3%;
         cursor: pointer;
     }
@@ -669,7 +671,7 @@ a{
     .ul-menu{
         display: block;
         margin-top: 55%;
-        margin-left: -70%;
+        margin-left: -63%;
         width: 40%;
         height: 280%;
         border-radius: 10px;
@@ -682,14 +684,15 @@ a{
     }
     
     .search{
-        width: 6%;
+        display: block;
+        width: 6.3%;
         margin-left: 70%;
         z-index: 3;
     }
 
     .add{
         display: block;
-        width: 6%;
+        width: 6.3%;
         margin-left: 7%;
         cursor: pointer;
         z-index: 3;
