@@ -106,7 +106,7 @@ function menu() {
     }
     else if(shet_menu==1){
         let menu = document.getElementById("ul-menu")
-        menu.style.marginLeft = "-65%"
+        menu.style.marginLeft = "-68%"
         shet_menu = 0;
     }
 }

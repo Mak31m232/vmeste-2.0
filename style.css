@@ -783,6 +783,7 @@ a{
     }
     
     .search{
+        display: block;
         width: 30%;
         margin-left: 70%;
         z-index: 3;
