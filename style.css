@@ -485,8 +485,8 @@ a{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 7.5%;
     background-color: rgb(54, 53, 53);
+    height: 7%;
     border-radius: 0px 0px 7px 0px;
     transition: .5s;
     z-index: 2;
@@ -500,7 +500,6 @@ a{
 }
 
 .menu-logo{
-    width: 100%;
     padding-top: 3%;
 }
 
