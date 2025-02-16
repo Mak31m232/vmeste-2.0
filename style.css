@@ -499,6 +499,10 @@ a{
     cursor: pointer;
 }
 
+.menu-logo{
+    transform: rotate(-4deg);
+}
+
 @media(min-width:1920px){
     .header{
         height: 80px;
