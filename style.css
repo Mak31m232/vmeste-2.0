@@ -486,7 +486,7 @@ a{
     bottom: 0;
     width: 100%;
     background-color: rgb(54, 53, 53);
-    height: 10%;
+    height: 7%;
     border-radius: 0px 0px 7px 0px;
     transition: .5s;
     z-index: 2;
@@ -497,10 +497,6 @@ a{
     width: 8%;
     padding-left: 10%;
     cursor: pointer;
-}
-
-.menu-logo{
-    padding-top: 3%;
 }
 
 @media(min-width:1920px){
