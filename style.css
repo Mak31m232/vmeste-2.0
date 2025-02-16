@@ -499,6 +499,11 @@ a{
     cursor: pointer;
 }
 
+.menu-logo{
+    width: 100%;
+    padding-top: 3%;
+}
+
 @media(min-width:1920px){
     .header{
         height: 80px;
