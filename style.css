@@ -98,7 +98,7 @@ a{
 }
 
 .input {
-    width: 0px;
+    width: 400px;
     height: 38px;
     line-height: 30px;
     font-size: 16px;
@@ -406,6 +406,99 @@ a{
     margin-left: 2%;
 }
 
+#shadow-help{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 55, 55);
+    opacity: 0.5;
+    display: none;
+    z-index: 4;
+}
+
+.help{
+    background-color: rgb(37, 37, 37);
+    font-size: 20px;
+    margin-left: 35%;
+    margin-top: -30%;
+    border-radius: 10px;
+    height: 680%;
+    width: 23%;
+    z-index: 5;
+    animation-name: help;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: help;
+    animation-delay: 0s;
+    display: none;
+}
+
+@keyframes help {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+
+.header-help{
+    background-color: #292929;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message{
+    display: flex;
+    margin-top: 137%;
+    height: 20%;
+}
+
+.message input{
+    width: 99%;
+    height: 45%;
+    color: #efeeee;
+    font-size: 14px;
+    background-color: #292929;
+    border-radius: 10px;
+    padding-left: 1rem;
+    border: 2px solid #292929;
+    outline: none;
+}
+
+.bi-bi-cursor{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 0.8%;
+    cursor: pointer;
+}
+
+.bottom-menu{
+    display: none;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(54, 53, 53);
+    height: 7%;
+    border-radius: 0px 0px 7px 0px;
+    transition: .5s;
+    z-index: 2;
+}
+
+.bottom-menu img{
+    display: inline;
+    width: 8%;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
 @media(min-width:1920px){
     .header{
         height: 80px;
@@ -441,6 +534,10 @@ a{
 }
 
 @media(max-width:1280px){
+    .form input{
+        width: 320px;
+    }
+    
     .bi-bi-chevron-right{
         margin-left: 40%;
         margin-top: -6%;
@@ -470,6 +567,10 @@ a{
    .user{
         width: 15%;
         margin-top: 23%;
+   }
+
+   .help{
+        height: 200%;
    }
 }
 
@@ -529,6 +630,15 @@ a{
    .registration-main button{
     margin-top: 30%;
    }
+
+   .help{
+        height: 250%;
+        width: 25%;
+    }
+
+    .message{
+        margin-top: 150%;
+    }
 }
 
 @media(max-width:480px){
@@ -615,20 +725,28 @@ a{
     }
 
     .form input{
-        width: 250px;
+        width: 350px;
         height: 38px;
         transition: .1s;
     }
 
     .bi-bi-x-lg{
         display: block;
-        width: 30px;
+        width: 25px;
         margin-left: -18%;
         cursor: pointer;
     }
 
     .registration-main{
         display: none;
+    }
+
+    .bi-bi-chat-right-dots{
+        display: none;
+    }
+
+    .bottom-menu{
+        display: flex;
     }
 }
 
@@ -730,6 +848,14 @@ a{
     .registration-main{
         display: none;
     }
+
+    .bi-bi-chat-right-dots{
+        display: none;
+    }
+
+    .bottom-menu{
+        display: flex;
+    }
 }
 
 @media(max-width:320px){
@@ -827,5 +953,13 @@ a{
 
     .registration-main{
         display: none;
+    }
+
+    .bi-bi-chat-right-dots{
+        display: none;
+    }
+
+    .bottom-menu{
+        display: flex;
     }
 }

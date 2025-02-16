@@ -18,8 +18,6 @@ let form = 0;
 function input() {
     if (form==0){
         let form_input = document.getElementById("form")
-        let input = document.getElementById("input")
-        input.style.width = "450px"
         form_input.style.marginLeft = "-36%"
         form_input.style.opacity  = "1"
         form_input.style.zIndex  = "6"
@@ -27,7 +25,6 @@ function input() {
     }
     else if (form==1){
         let form_input = document.getElementById("form")
-        let input = document.getElementById("input")
         form_input.style.marginLeft = "35%"
         form_input.style.opacity  = "0"
         form_input.style.zIndex  = "1"
@@ -76,10 +73,8 @@ function right_switch() {
     let right_switch = document.getElementById("ul-menu")
     let svg_switch = document.getElementById("bi-bi-chevron-left")
     let svg_switch_right = document.getElementById("bi-bi-chevron-right")
-    let input = document.getElementById("input")
     let switch_div = document.getElementById("div-switch")
     switch_div.style.zIndex = "5"
-    input.style.width = "400px"
     svg_switch_right.style.display = "none"
     svg_switch.style.display = "block"
     right_switch.style.marginLeft = "34%"
@@ -89,9 +84,7 @@ function left_switch() {
     let left_switch = document.getElementById("ul-menu") 
     let svg_switch = document.getElementById("bi-bi-chevron-left")
     let svg_switch_right = document.getElementById("bi-bi-chevron-right")
-    let input = document.getElementById("input")
     left_switch.style.marginLeft = "40%"
-    input.style.width = "450px"
     svg_switch_right.style.display = "block"
     svg_switch.style.display = "none"
 }
@@ -109,4 +102,31 @@ function menu() {
         menu.style.marginLeft = "-68%"
         shet_menu = 0;
     }
+}
+
+let help_shet = 0;
+
+function help() {
+    if (help_shet == 0) {
+        let help = document.getElementById("help")
+        let shadow = document.getElementById("shadow-help")
+        shadow.style.display = "block"
+        help.style.display = "block"
+        help_shet = 1;
+    }
+    else if(help_shet == 1){
+        let help = document.getElementById("help")
+        let shadow = document.getElementById("shadow-help")
+        shadow.style.display = "none"
+        help.style.display = "none"
+        help_shet = 0;
+    }
+}
+
+function help_cross() {
+    let help = document.getElementById("help")
+    let shadow = document.getElementById("shadow-help")
+    shadow.style.display = "none"
+    help.style.display = "none"
+    help_shet = 0;
 }

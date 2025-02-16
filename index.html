@@ -11,6 +11,7 @@
     <title>Гланая</title>
 </head>
 <body>
+    <div id="shadow-help"></div>
     <header id="header" class="header">
         <div class="main">
             <img onclick="menu()" class="menu" src="img/меню.png" alt="">
@@ -57,7 +58,7 @@
                         <a href="" class="link-menu">Премиум</a><br>
                             <a href="" class="link-menu">Избранное</a><br>
                             <a href="" class="link-menu">Настройки</a><br>
-                    <a href="" class="link-menu">Помощь</a><br>
+                    <a onclick="help()" style="cursor: pointer;" class="link-menu">Помощь</a><br>
                 <a href="" class="link-menu">Выйти</a>
             </div>
         </div>
@@ -81,6 +82,33 @@
             </button>
         </div>
     </div>
+    </div>
+    <div id="help" class="help">
+        <div class="header-help">
+            <p>команда vmeste</p>
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="help_cross()" style="margin-left: 18%; position:absolute; cursor:pointer;" width="23" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+        </div>
+        <div class="message">
+            <input type="text" spellcheck="true" placeholder="Чем можем помочь?">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi-bi-cursor" viewBox="0 0 16 16">
+                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52z"/>
+            </svg>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" onclick="help()" style="position:fixed; cursor: pointer; margin-left:88.5%; margin-top:40%; z-index:3;" width="2.3%" fill="currentColor" class="bi-bi-chat-right-dots" viewBox="0 0 16 16">
+        <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg>
+    <div class="bottom-menu">
+        <ul>
+            <img src="img/плейлисты.png" alt="">
+                <img src="img/уведомления.png" alt="">
+                    <img class="menu-logo" src="img/лого.png" alt="">
+                <img src="img/настройки.png" alt="">
+            <img src="img/user.png" alt="">
+        </ul>
     </div>
     <div class="div-content"></div>
 </body>
