@@ -414,6 +414,14 @@ a{
     margin-left: 2%;
 }
 
+.bi-bi-chat-right-dots{
+    position:fixed; 
+    cursor: pointer; 
+    margin-left:95%; 
+    margin-top:40%; 
+    z-index:3;
+}
+
 #shadow-help{
     position: absolute;
     width: 100%;
@@ -804,8 +812,9 @@ a{
     }
 
     .bi-bi-chat-right-dots{
-        position: sticky;
+        position: fixed;
         bottom: 10%;
+        margin-left: 82%;
         width: 9%;
         z-index: 2;
     }
@@ -821,7 +830,7 @@ a{
         position: sticky;
         top: 0;
         font-size: 25px;
-        height: 4%;
+        height: 3%;
     }
 
     .bi-bi-x-lg{
@@ -963,9 +972,10 @@ a{
     }
 
     .bi-bi-chat-right-dots{
-        position: sticky;
+        position: fixed;
         display: block;
         bottom: 10%;
+        margin-left: 82%;
         width: 9%;
         z-index: 2;
     }
