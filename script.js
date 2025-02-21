@@ -130,3 +130,8 @@ function help_cross() {
     help.style.display = "none"
     help_shet = 0;
 }
+
+let message = () => {
+    let input_message = document.getElementById("input_message").value = ""
+    
+}

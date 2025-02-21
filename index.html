@@ -24,8 +24,8 @@
                           d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
                         ></path>
                     </svg>
-                    <input id="input" class="input" type="search" spellcheck="true" placeholder="Поиск" />
-                    <svg onclick="cross_input()" xmlns="http://www.w3.org/2000/svg" style="margin-left: -13%;" width="40" fill="currentColor" class="bi-bi-x-lg" viewBox="0 0 16 16">
+                    <input id="input" class="input" type="text" spellcheck="true" placeholder="Поиск" />
+                    <svg onclick="cross_input()" xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi-bi-x-lg-input" viewBox="0 0 16 16">
                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
                     </svg>
                 </div>
@@ -71,8 +71,8 @@
                     слушать музыку<br> 
                     и читать книги прямо сейчас </h1>
             <div class="reg">
-                <input type="text" placeholder="@username" id="usernameField-username" required="required">
-                <input type="password" placeholder="password" id="usernameField-password" required="required">
+                <input min="2" type="text" placeholder="@username" id="usernameField-username" required="required">
+                <input min="5" type="password" placeholder="password" id="usernameField-password" required="required">
             </div>
             <button onclick="registration()" id="button-registartion" class="button-registartion">
                 <span class="button-content">Зарегистрироваться</span>
@@ -86,18 +86,19 @@
     <div id="help" class="help">
         <div class="header-help">
             <p>команда vmeste</p>
-            <svg xmlns="http://www.w3.org/2000/svg" onclick="help_cross()" style="margin-left: 18%; position:absolute; cursor:pointer;" width="23" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="help_cross()" width="23" fill="currentColor" class="bi-bi-x-lg" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
             </svg>
         </div>
+        <div id="container-message"></div>
         <div class="message">
-            <input type="text" spellcheck="true" placeholder="Чем можем помочь?">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi-bi-cursor" viewBox="0 0 16 16">
+            <input id="input_message" type="text" maxlength="45" style=" position: sticky; bottom:0;" spellcheck="true" placeholder="Чем можем помочь?">
+            <svg onclick="message()" xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" id="bi-bi-cursor" class="bi-bi-cursor" viewBox="0 0 16 16">
                 <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52z"/>
             </svg>
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" onclick="help()" style="position:fixed; cursor: pointer; margin-left:88.5%; margin-top:40%; z-index:3;" width="2.3%" fill="currentColor" class="bi-bi-chat-right-dots" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" onclick="help()" style="position:fixed; cursor: pointer; margin-left:93%; margin-top:40%; z-index:3;" width="2.3%" fill="currentColor" class="bi-bi-chat-right-dots" viewBox="0 0 16 16">
         <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
         <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
     </svg>

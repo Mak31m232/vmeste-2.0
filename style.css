@@ -9,6 +9,7 @@ body{
     font-size: medium;
     max-width: 1920px;
     padding: 15px auto;
+    caret-color: transparent;
     margin: auto;
 }
 
@@ -17,6 +18,10 @@ html,body{
     flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+input{
+    caret-color: auto;
 }
 
 a{
@@ -98,7 +103,7 @@ a{
 }
 
 .input {
-    width: 400px;
+    width: 350px;
     height: 38px;
     line-height: 30px;
     font-size: 16px;
@@ -114,8 +119,9 @@ a{
     transition: 0.3s all;
 }
 
-.bi-bi-x-lg{
+.bi-bi-x-lg-input{
     display: none;
+    margin-left: 80%;
 }
 
 .link-menu{
@@ -168,10 +174,12 @@ a{
 }
 
 .bi-bi-chevron-right{
+    display: flex;
+    align-items: center;
     position: absolute;
     cursor: pointer;
     margin-left: 36%;
-    margin-top: -5.5%;
+    margin-top: -5.3%;
     padding-right: 15%;
     background-color: rgb(50, 50, 50);
 }
@@ -198,7 +206,7 @@ a{
     width: 2%;
     margin-left: 2.5%;
     cursor: pointer;
-    z-index: 2;
+    z-index: 4;
 }
 
 .search{
@@ -293,7 +301,7 @@ a{
 
 .logo-social{
     position: absolute;
-    width: 40%;
+    width: 38%;
     margin-left: -40%;
     margin-top: -2%;
 }
@@ -396,7 +404,7 @@ a{
     var(--fancy-button-gradient-100) 100%
     );
     background-size: 400%;
-    margin-top: 22%;
+    margin-top: 20%;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -454,9 +462,16 @@ a{
     justify-content: center;
 }
 
+.bi-bi-x-lg{
+    position:absolute;
+    margin-left: 18%; 
+    cursor:pointer;
+}
+
 .message{
     display: flex;
-    margin-top: 137%;
+    align-items: center;
+    margin-top: 130%;
     height: 20%;
 }
 
@@ -475,7 +490,6 @@ a{
 .bi-bi-cursor{
     position: absolute;
     margin-left: 20%;
-    margin-top: 0.8%;
     cursor: pointer;
 }
 
@@ -508,6 +522,10 @@ a{
         height: 80px;
     }
 
+    .ul-menu{
+        margin-left: 40%;
+    }
+
     .bi-bi-chevron-right{
         margin-left: 20%;
         margin-top: -4%;
@@ -517,12 +535,36 @@ a{
         margin-left: 8.7%;
     }
 
+    .registration-main h1{
+        font-size: 20px;
+    }
+
+    .registration-main h3{
+        font-size: 40px;
+    }
+
     .registration-main button{
-        margin-top: 16%;
+        margin-top: 18%;
     }
 
     .registration-main img{
-        width: 37%;
+        width: 34%;
+    }
+
+    .help{
+        height: 550%;
+        width: 22%;
+        font-size: 30px;
+        margin-top: -25%;
+    }
+
+    .message{
+        margin-top: 148%;
+    }
+
+    .user{
+        height: 350%;
+        font-size: 23px;
     }
 }
 
@@ -535,11 +577,22 @@ a{
     .div-switch svg{
         padding-left: 70%;
     }
+
+    .message{
+        display: flex;
+        align-items: center;
+        margin-top: 175%;
+    }
+
+    .user{
+        margin-top: 20%;
+        width: 15%;
+    }
 }
 
 @media(max-width:1280px){
     .form input{
-        width: 320px;
+        width: 300px;
     }
     
     .bi-bi-chevron-right{
@@ -575,6 +628,10 @@ a{
 
    .help{
         height: 200%;
+   }
+
+   .message{
+    margin-top: 120%;
    }
 }
 
@@ -638,10 +695,11 @@ a{
    .help{
         height: 250%;
         width: 25%;
+        margin-top: -35%;
     }
 
     .message{
-        margin-top: 150%;
+        margin-top: 145%;
     }
 }
 
@@ -734,10 +792,10 @@ a{
         transition: .1s;
     }
 
-    .bi-bi-x-lg{
+    .bi-bi-x-lg-input{
         display: block;
         width: 25px;
-        margin-left: -18%;
+        margin-left: -10%;
         cursor: pointer;
     }
 
@@ -746,7 +804,50 @@ a{
     }
 
     .bi-bi-chat-right-dots{
-        display: none;
+        position: sticky;
+        bottom: 10%;
+        width: 9%;
+        z-index: 2;
+    }
+
+    .help{
+        position: fixed;
+        width: 100%;
+        margin-top: -1%;
+        margin-left: 0;
+    }
+
+    .header-help{
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        height: 4%;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 25px;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .message{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 7%;
+        bottom: 0;
+        margin-top: 170%;
+        font-size: 45px;
+    }
+
+    .message input{
+        font-size: 17px;
+    }
+
+    .bi-bi-cursor{
+        margin-left: 85%;
+        width: 7%;
     }
 
     .bottom-menu{
@@ -860,6 +961,54 @@ a{
     .bottom-menu{
         display: flex;
     }
+
+    .bi-bi-chat-right-dots{
+        position: sticky;
+        display: block;
+        bottom: 10%;
+        width: 9%;
+        z-index: 2;
+    }
+
+    .help{
+        position: fixed;
+        width: 100%;
+        margin-top: -1%;
+        margin-left: 0;
+    }
+
+    .header-help{
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        height: 4%;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 25px;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .message{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 7%;
+        bottom: 0;
+        margin-top: 170%;
+        font-size: 45px;
+    }
+
+    .message input{
+        font-size: 17px;
+    }
+
+    .bi-bi-cursor{
+        margin-left: 85%;
+        width: 7%;
+    }
 }
 
 @media(max-width:320px){
@@ -965,5 +1114,53 @@ a{
 
     .bottom-menu{
         display: flex;
+    }
+
+    .bi-bi-chat-right-dots{
+        position: sticky;
+        display: block;
+        bottom: 10%;
+        width: 9%;
+        z-index: 2;
+    }
+
+    .help{
+        position: fixed;
+        width: 100%;
+        margin-top: -1%;
+        margin-left: 0;
+    }
+
+    .header-help{
+        position: sticky;
+        top: 0;
+        font-size: 25px;
+        height: 4%;
+    }
+
+    .bi-bi-x-lg{
+        display: block;
+        width: 25px;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .message{
+        display: flex;
+        align-items: center;
+        position: sticky;
+        height: 7%;
+        bottom: 0;
+        margin-top: 170%;
+        font-size: 45px;
+    }
+
+    .message input{
+        font-size: 17px;
+    }
+
+    .bi-bi-cursor{
+        margin-left: 85%;
+        width: 7%;
     }
 }
